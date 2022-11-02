@@ -27,7 +27,7 @@ const redisURL = process.env.REDISCLOUD_URL
   || 'redis://default:OtTxSFzae5ALUkwSNi9SywxtOOxTFRaC@redis-15951.c11.us-east-1-3.ec2.cloud.redislabs.com:15951';
 
 const redisClient = redis.createClient({
-  legacyMode: true,
+  legacyMode: true, 
   url: redisURL,
 });
 redisClient.connect().catch(console.error);
